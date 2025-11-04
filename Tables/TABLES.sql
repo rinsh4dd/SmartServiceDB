@@ -133,7 +133,7 @@ CREATE TABLE Staff (
 );
 
 GO
-
+  
 CREATE TABLE Technicians (
     TechnicianId INT IDENTITY(1,1) PRIMARY KEY,
     UserId INT NOT NULL,
