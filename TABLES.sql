@@ -7,7 +7,7 @@ CREATE TABLE Users (
     PasswordHash VARCHAR(128) NOT NULL,
     Role VARCHAR(20) CHECK (Role IN ('Admin','Customer','Technician','Staff')),
     IsActive BIT DEFAULT 1,
-
+ 
     CreatedOn DATETIME DEFAULT GETDATE() NOT NULL,
     CreatedBy INT NULL,
     ModifiedAt DATETIME NULL,
